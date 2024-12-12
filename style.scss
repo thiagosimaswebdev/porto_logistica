@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  font-family: "Oswald";
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  nav {
+    width: 40%;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.25em;
+    color: #585858;
+    font-weight: 500;
+  }
+
+  button {
+    border: 2px solid; // largura da borda
+    height: 4.75rem; // altura da caixa
+    width: 9.75rem; // largura da caixa
+    font-size: 1.7em;
+    font-weight: 500;
+  }
+}
+
+.container {
+  height: 70vh; /* Define a altura da section como 100% da altura da tela */
+  font-family: "Oswald";
+  background-image: url("./imagens/background.png");
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  background-size: cover; /* Ajusta a imagem para cobrir todo o contêiner */
+  padding-left: 8rem;
+  //border: solid black;
+  color: white; /* Altera a cor do texto para branco, para contraste com a imagem */
+  display: flex; /* Usado para centralizar o conteúdo */
+  justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+  align-items: start; /* Alinha o conteúdo verticalmente no centro */
+  // text-align: center;  /* Garante que o texto dentro da section fique centralizado */
+  //z-index: 1;          /* Garante que o conteúdo da section fique acima da imagem */
+  flex-direction: column;
+  h1 {
+    font-weight: 700;
+    font-size: 96px;
+  }
+
+  p {
+    font-size: 32px;
+    font-weight: 300;
+    text-align: left;
+  }
+}
+
+button {
+  //margin: 20px ;  /* Ajusta o espaçamento entre os elementos */
+  //border: solid black;
+  font-family: "Oswald";
+  font-weight: 900;
+}
+
+/* Estilizando o botão */
+.link-button {
+  background-color: blue; /* Cor de fundo */
+  width: 12em;
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  //border: solid black;
+  padding: 15px 20px; /* Espaciamento interno */
+  margin: 15px;
+  text-align: center; /* Centraliza o texto */
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: 700;
+  cursor: pointer; /* Muda o cursor para pointer */
+  transition: background-color 0.3s ease; /* Animação suave para cor de fundo */
+}
+
+/* Estilo ao passar o mouse (hover) */
+.link-button:hover {
+  background-color: rgb(35, 35, 230); /* Cor de fundo mais escura */
+}
+
+/* Estilo da imagem de fundo */
+
+.containerGestao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15vh 0;
+  height: 100vh;
+
+  img {
+    width: 40vw; // usar vw quando for width
+  }
+}
+
+.gestaoPortuaria {
+  //padding-top: 80px;
+  width: 40%;
+  height: 550px;
+  margin: 140px;
+  font-family: "Roboto";
+  //border:  solid rgb(146, 10, 10);
+
+  p {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 36px 0;
+  }
+
+  h2 {
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 800;
+    margin: 24px 0;
+  }
+
+  strong {
+    color: #0017e9;
+    font-size: 1.5rem;
+    font-family: "Oswald";
+    font-weight: 500;
+  }
+
+  .link-contato {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 400;
+    color: #0017e9;
+    text-decoration: none;
+  }
+}
+
+.containerSoluçoes {
+  display: flex;
+  height: 100vh;
+  background-color: #d8d8d8;
+  flex-direction: column;
+  //border: solid blue;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-evenly;
+
+  h2{
+    margin-top: 2vh;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Oswald";
+    color: #0017e9;
+    //text-transform: uppercase;
+    
+  }
+  p {
+    margin-bottom: 10vh;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "oswald";
+  }
+}
+
+.imagens-soluçoes {
+  margin-bottom: 10vh;
+  display: flex;
+  width: 80vw;
+  //border: solid black;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: none;
+
+  article {
+    background-color: white;
+    height: 52vh;
+    width: 22vw;
+    text-align: start;
+    box-shadow: 0px 0px 10px 0px #000000;
+
+    h3 {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      font-family: "Oswald";
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+    p {
+      margin-top: 3rem;
+      margin: 0 1rem;
+      font-family: "Oswald";
+      font-weight: 200;
+      font-size: 1.5rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.contatoSection {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+
+  .atendimentocomercial{
+    width: 50vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: start;
+
+    .galeriafigure {
+      display: flex;
+      width: 80%;
+      flex-wrap: wrap;
+  
+    }
+
+    figure {
+      margin-left: 2rem;
+      figcaption {
+        font-family: "Oswald";
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+    }
+  
+    h2 {
+      margin-left: 2rem;
+      margin-bottom: 3.5rem;
+      color: #0017e9;
+      font-family: "Oswald";
+      font-weight: 500;
+      font-size: 2rem;
+    }
+    h3 {
+      margin-left: 2rem;
+      margin-bottom: 4rem;
+      color: #000000;
+      font-family: "Oswald";
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+  }
+  
+  .contatoArticle {
+    width: 30vw;
+    h2 {
+      margin-top: 3.5rem;
+      margin-bottom: 1.5rem;
+      color: #0017e9;
+      font-family: "Oswald";
+      font-weight: 500;
+      font-size: 2rem;
+    }
+    h3 {
+      margin-bottom: 1rem;
+      color: #000000;
+      font-family: "Oswald";
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      label {
+        margin-top: 1.5rem;
+        font-family: "Oswald";
+        font-weight: 300;
+        font-size: 1.5rem;
+      }
+      input {
+        height: 5.5vh;
+        width: 23vw;
+      }
+      textarea {
+        height: 12vh;
+        width: 23vw;
+      }
+      button {
+        margin-top: 3.75rem;
+        background-color: #0017e9;
+        color: #ffffff;
+        width: 23vw;
+        height: 6.5vh;
+        font-family: "Oswald";
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+footer {
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  background-color: #d8d8d8;
+  align-items: center;
+  p {
+    font-family: "Oswald";
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 201px) and (max-width: 500px){
+  header{
+      align-items: start;
+      h2{
+      font-size: 2rem;
+      color: rgb(255, 0, 0);
+      background-color: rgba(11, 138, 49, 0.2);
+      border-radius: 20px;
+  }
+}
+}
