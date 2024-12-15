@@ -434,7 +434,7 @@ footer {
 
     .atendimentocomercial,
     .contatoArticle {
-      width: 90%;
+      width: 100%;
       margin-bottom: 2rem;
 
       h2,
@@ -445,7 +445,7 @@ footer {
 
     form {
       width: 100%; /* Ajusta o formulário para ocupar 90% da largura */
-      margin: 0 auto;
+      //margin: 0 auto;
 
       input,
       textarea {

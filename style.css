@@ -382,7 +382,7 @@ footer p {
   }
   .contatoSection .atendimentocomercial,
   .contatoSection .contatoArticle {
-    width: 90%;
+    width: 100%;
     margin-bottom: 2rem;
   }
   .contatoSection .atendimentocomercial h2,
@@ -393,7 +393,6 @@ footer p {
   }
   .contatoSection form {
     width: 100%; /* Ajusta o formulário para ocupar 90% da largura */
-    margin: 0 auto;
   }
   .contatoSection form input,
   .contatoSection form textarea {
