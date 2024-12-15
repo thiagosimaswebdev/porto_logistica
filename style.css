@@ -292,14 +292,125 @@ footer p {
   font-size: 0.875rem;
 }
 
-@media (min-width: 201px) and (max-width: 500px) {
+@media (max-width: 768px) {
   header {
-    align-items: start;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  header ul {
+    display: flex;
+    flex-direction: row; /* Organiza a lista na horizontal */
+    justify-content: space-between;
+    width: 100%; /* Ocupa toda a largura */
+    padding: 0 1rem;
   }
   header h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+  header nav {
+    width: 100%;
+    text-align: center;
+  }
+  header button {
+    height: 3.5rem;
+    width: 8rem;
+    font-size: 1.2em;
+    margin: 1rem auto;
+  }
+  .container {
+    padding: 2rem;
+    text-align: justify;
+  }
+  .container h1 {
     font-size: 2rem;
-    color: rgb(255, 0, 0);
-    background-color: rgba(11, 138, 49, 0.2);
-    border-radius: 20px;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+  .containerGestao {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 8px;
+  }
+  .containerGestao img {
+    width: 90%;
+  }
+  .containerGestao .gestaoPortuaria {
+    width: 90%;
+    margin: 2rem 0;
+  }
+  .containerGestao .gestaoPortuaria p {
+    font-size: 1em;
+  }
+  .containerGestao .gestaoPortuaria h2 {
+    text-align: justify;
+  }
+  .containerSoluçoes {
+    height: auto;
+    padding: 2rem;
+    text-align: justify;
+  }
+  .containerSoluçoes .imagens-soluçoes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerSoluçoes .imagens-soluçoes article {
+    width: 90%;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+  .containerSoluçoes .imagens-soluçoes article h3 {
+    font-size: 1.2rem;
+  }
+  .containerSoluçoes .imagens-soluçoes article p {
+    font-size: 1rem;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+  .containerSoluçoes .imagens-soluçoes article img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajusta a altura máxima para evitar caixas muito grandes */
+  }
+  .contatoSection {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+  .contatoSection .atendimentocomercial,
+  .contatoSection .contatoArticle {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .contatoSection .atendimentocomercial h2,
+  .contatoSection .atendimentocomercial h3,
+  .contatoSection .contatoArticle h2,
+  .contatoSection .contatoArticle h3 {
+    text-align: center;
+  }
+  .contatoSection form {
+    width: 100%; /* Ajusta o formulário para ocupar 90% da largura */
+    margin: 0 auto;
+  }
+  .contatoSection form input,
+  .contatoSection form textarea {
+    width: 100%; /* Ajusta os campos do formulário */
+    margin-bottom: 1rem;
+  }
+  .contatoSection form textarea {
+    resize: none;
+  }
+  .contatoSection form button {
+    width: 90%; /* Botão ocupa 90% da largura */
+    background-color: #0017e9;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
